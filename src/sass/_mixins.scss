@@ -1,0 +1,29 @@
+$browser-context: 16; // Default font-size
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+@mixin position($position, $num) {
+  position: $position;
+  top: $num;
+  left: $num;
+  right: $num;
+  bottom: $num;
+}

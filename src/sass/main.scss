@@ -1,0 +1,51 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
+  color: $clr-text;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: $clr-text;
+  text-decoration: none;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+// .container {
+//   max-width: 1200px;
+//   padding-left: $gutter/2;
+//   padding-right: $gutter/2;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
